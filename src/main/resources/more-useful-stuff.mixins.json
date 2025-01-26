@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "huaji121.moreusefulstuff.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

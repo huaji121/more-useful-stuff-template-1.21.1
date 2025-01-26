@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "more-useful-stuff",
+	"version": "${version}",
+	"name": "More Useful Stuff",
+	"description": "Add some useful things.",
+	"authors": [
+		"huaji121"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/more-useful-stuff/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"huaji121.moreusefulstuff.MoreUsefulStuff"
+		],
+		"fabric-datagen": [
+			"huaji121.moreusefulstuff.MoreUsefulStuffDataGenerator"
+		],
+		"client": [
+			"huaji121.moreusefulstuff.MoreUsefulStuffClient"
+		]
+	},
+	"mixins": [
+		"more-useful-stuff.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
