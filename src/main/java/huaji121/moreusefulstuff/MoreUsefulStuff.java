@@ -1,5 +1,8 @@
 package huaji121.moreusefulstuff;
 
+import huaji121.moreusefulstuff.block.ModBlocks;
+import huaji121.moreusefulstuff.item.ModItemGroups;
+import huaji121.moreusefulstuff.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +22,9 @@ public class MoreUsefulStuff implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModItems.registerModItems();
+		ModItemGroups.registerModItemGroups();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
